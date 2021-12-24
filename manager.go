@@ -114,6 +114,7 @@ func newManager(hostPort string, options *ManagerOptions) (*Manager, error) {
 		idxCluster:     make(map[string]ClusterInfo),
 		idxServers:     make(map[string]ServerInfo),
 		runner:         options.Runner,
+		racPath:        options.RacPath,
 	}
 
 	err := manager.init()
